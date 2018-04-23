@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Class";
+}
+
+<h3>Persons info:</h3>
+
+<table>
+    <tr>
+        <td style="width:80px; font-weight:600"><p>Name</p></td>
+        <td style="width:100px; font-weight:600"><p>Surname</p></td>
+        <td style="width:50px; font-weight:600"><p>Age</p></td>
+        <td style="width:50px; font-weight:600"><p>Height</p></td>
+    </tr>
+    @foreach (var p in ViewBag.Persons)
+    {
+        <tr>
+            <td><p>@p.Name</p></td>
+            <td><p>@p.Surname</p></td>
+            <td><p>@p.Age</p></td>
+            <td><p>@p.Height</p></td>
+        </tr>
+    }
+</table>
+

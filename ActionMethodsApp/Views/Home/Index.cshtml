@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>Homework (action methods)</h2>
+    <p class="lead">Below You can find links to different controllers:</p>
+
+    <ul>        
+        <li style="font-size: large">@Html.ActionLink("PDF-file", "Pdf", "GetPdf")</li>
+        <li style="font-size: large">@Html.ActionLink("Images", "Images", "GetImages")</li>
+        <li style="font-size: large">@Html.ActionLink("Table", "Class", "GetClass")</li>
+        <li style="font-size: large">@Html.ActionLink("Calculate", "Square", "Calculate")</li>
+    </ul>
+</div>
+

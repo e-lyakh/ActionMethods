@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Pdf";
+}
+
+<h3>PDF-file:</h3>
+
+<embed src="~/Files/sample.pdf" width="1000" height="1000" type='application/pdf'>
+
+<p></p>
+<p>@Html.ActionLink("Download pdf-file", "GetFile", "GetPdf")</p>
+
